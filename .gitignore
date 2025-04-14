@@ -1,0 +1,41 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+
+# Environment
+.env
+.venv/
+venv/
+ENV/
+env/
+*.env
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Uploaded files (optional)
+uploads/*
+!uploads/.gitkeep
+
+
+
+# Token/Secret Keys
+secrets.json
+config.yaml
+*.key
+
+credential.ini
+
