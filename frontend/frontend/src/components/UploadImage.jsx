@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Loader from "./Loader";
+import axios from 'axios';
+
 
 const UploadImage = ({ setStoryData }) => {
     const [image, setImage] = useState(null);
@@ -22,7 +24,7 @@ const UploadImage = ({ setStoryData }) => {
       formData.append("prompt", prompt);
   
       try {
-        const res = await axios.post("http://localhost:5000/generate", formData);
+        const res = await axios.post("http://localhost:5000/upload", formData);
         setStoryData(res.data);
       } catch (err) {
         console.error("Error generating story:", err);
