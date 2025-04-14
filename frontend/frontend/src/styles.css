@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #fceabb, #f8b500);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .app {
+    text-align: center;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .upload-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .upload-box input[type="text"],
+  .upload-box input[type="file"] {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    width: 70%;
+    border: none;
+  }
+  
+  .upload-box button {
+    background: #ffffff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .upload-box button:hover {
+    background: #ffcc00;
+    transform: scale(1.05);
+  }
+  
+  .story-box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 15px;
+    max-width: 850px;
+    color: #f8f8f8;
+    text-align: left;
+    line-height: 1.6;
+  }
+  
+  .loader {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
