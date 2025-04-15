@@ -24,7 +24,7 @@ Turn any image into a beautiful short story using AI. This app leverages **Image
 #### 🔧 `backend/`
 | File | Description |
 |------|-------------|
-| `app.py` | Flask server defining the `/generate` route to handle file uploads and return a story. |
+| `app.py` | Flask server defining the `/upload` route to handle file uploads and return a story. |
 | `image_captioning.py` | Uses a pretrained HuggingFace model (BLIP/CLIP) to generate a caption for the uploaded image. |
 | `story_generator.py` | Sends the caption (and optional prompt) to Gemini API and retrieves a short story. |
 | `credential.ini` | Stores your Gemini API key securely (excluded from version control). |

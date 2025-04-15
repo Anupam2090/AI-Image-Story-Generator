@@ -49,6 +49,12 @@ const UploadImage = ({ setStoryData }) => {
         <button onClick={handleSubmit} disabled={loading}>
           {loading ? "Generating..." : "Generate Story"}
         </button>
+        {loading && (
+          <div className="outside-loader">
+            <img src="/assets/letter.gif" alt="Loading..." />
+  </div>
+)}
+
       </div>
     );
   };

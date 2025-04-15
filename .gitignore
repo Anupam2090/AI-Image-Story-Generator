@@ -39,3 +39,7 @@ config.yaml
 
 credential.ini
 
+/public/assets/*
+!/public/assets/.gitkeep
+
+
