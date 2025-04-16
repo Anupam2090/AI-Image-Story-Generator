@@ -35,7 +35,18 @@ const UploadImage = ({ setStoryData }) => {
 
   return (
     <div className="upload-box">
-      <label htmlFor="prompt">✍️ Write a story prompt (optional):</label>
+      <label htmlFor="prompt">
+        <img
+          src="/assets/writing.png"
+          alt="Write Icon"
+          style={{
+            height: "20px",
+            verticalAlign: "middle",
+            marginRight: "8px",
+          }}
+        />
+         Write a story prompt (optional):
+      </label>
       <input
         type="text"
         id="prompt"
@@ -53,8 +64,6 @@ const UploadImage = ({ setStoryData }) => {
           <img src="/assets/letter.gif" alt="Loading..." />
         </div>
       )}
-
-      
     </div>
   );
 };
