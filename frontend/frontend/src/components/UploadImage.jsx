@@ -6,18 +6,22 @@ const UploadImage = ({ setStoryData }) => {
   const [image, setImage] = useState(null);
   const [prompt, setPrompt] = useState("");
   const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(""); // 👈 Error message for display
 
   const handleImageChange = (e) => {
     setImage(e.target.files[0]);
+    setErrorMessage(""); // 👈 Clear error when image is selected
   };
 
   const handleSubmit = async () => {
     if (!image) {
-      alert("Please select an image!");
+      setErrorMessage("Please select an image!");
       return;
     }
 
     setLoading(true);
+    setErrorMessage(""); // clear before sending
+
     const formData = new FormData();
     formData.append("image", image);
     formData.append("prompt", prompt);
@@ -27,7 +31,7 @@ const UploadImage = ({ setStoryData }) => {
       setStoryData(res.data);
     } catch (err) {
       console.error("Error generating story:", err);
-      alert("Failed to generate story.");
+      setErrorMessage("Failed to generate story.");
     } finally {
       setLoading(false);
     }
@@ -45,8 +49,9 @@ const UploadImage = ({ setStoryData }) => {
             marginRight: "8px",
           }}
         />
-         Write a story prompt (optional):
+        Write a story prompt (optional):
       </label>
+
       <input
         type="text"
         id="prompt"
@@ -56,9 +61,38 @@ const UploadImage = ({ setStoryData }) => {
       />
 
       <input type="file" onChange={handleImageChange} />
+
+      {/* Error message with icon */}
+      {errorMessage && (
+        <div
+          style={{
+            position: "fixed",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            color: "red",
+            background: "#ffe6e6",
+            padding: "12px 20px",
+            borderRadius: "8px",
+            display: "flex",
+            alignItems: "center",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
+            zIndex: 9999,
+          }}
+        >
+          <img
+            src="/assets/cancel.png"
+            alt="Error"
+            style={{ height: "18px", marginRight: "8px" }}
+          />
+          {errorMessage}
+        </div>
+      )}
+
       <button onClick={handleSubmit} disabled={loading}>
         {loading ? "Generating..." : "Generate Story"}
       </button>
+
       {loading && (
         <div className="outside-loader">
           <img src="/assets/letter.gif" alt="Loading..." />
