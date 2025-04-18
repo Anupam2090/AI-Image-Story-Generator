@@ -11,14 +11,42 @@ const App = () => {
     return (
       <div className="landing-page">
         <h1 className="welcome-title">
-          ✨ Welcome to AI Image Story Generator ✨
+          <img
+            src="/assets/star.png"
+            alt="Star Icon Left"
+            style={{
+              height: "40px",
+              verticalAlign: "middle",
+              marginRight: "10px",
+            }}
+          />
+          Welcome to AI Story Generator
+          <img
+            src="/assets/star.png"
+            alt="Star Icon Right"
+            style={{
+              height: "40px",
+              verticalAlign: "middle",
+              marginLeft: "10px",
+            }}
+          />
         </h1>
         <button className="enter-button" onClick={() => setShowLanding(false)}>
-          Open App 🚀
+          <img
+            src="/assets/double-tap.png"
+            alt="Rocket Icon"
+            style={{
+              height: "20px",
+              verticalAlign: "middle",
+              marginRight: "8px",
+            }}
+          />
+          Open App
         </button>
       </div>
     );
   }
+
 
   return (
     <div className="app">

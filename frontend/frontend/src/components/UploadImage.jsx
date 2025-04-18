@@ -6,11 +6,11 @@ const UploadImage = ({ setStoryData }) => {
   const [image, setImage] = useState(null);
   const [prompt, setPrompt] = useState("");
   const [loading, setLoading] = useState(false);
-  const [errorMessage, setErrorMessage] = useState(""); // 👈 Error message for display
+  const [errorMessage, setErrorMessage] = useState(""); 
 
   const handleImageChange = (e) => {
     setImage(e.target.files[0]);
-    setErrorMessage(""); // 👈 Clear error when image is selected
+    setErrorMessage(""); 
   };
 
   const handleSubmit = async () => {
@@ -20,7 +20,7 @@ const UploadImage = ({ setStoryData }) => {
     }
 
     setLoading(true);
-    setErrorMessage(""); // clear before sending
+    setErrorMessage(""); 
 
     const formData = new FormData();
     formData.append("image", image);
@@ -95,7 +95,7 @@ const UploadImage = ({ setStoryData }) => {
 
       {loading && (
         <div className="outside-loader">
-          <img src="/assets/letter.gif" alt="Loading..." />
+          <img src="/assets/loading.gif" alt="Loading..." />
         </div>
       )}
     </div>
