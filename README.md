@@ -5,13 +5,13 @@ Turn any image into a beautiful short story using AI. This app leverages **Image
 ---
 ```
 ```
-![landing page Screenshot](landing_page.png)
+![landing page Screenshot](screenshots/landing_page.png)
 ```
 ```
-![main page Screenshot](main_page.png)
+![main page Screenshot](screenshots/main_page.png)
 ```
 ```
-![story generate demo Screenshot](generate_story.png)
+![story generate demo Screenshot](screenshots/generate_story.png)
 ```
 
 ## 🚀 Features
