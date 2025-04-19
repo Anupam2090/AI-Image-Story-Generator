@@ -5,8 +5,7 @@ Turn any image into a beautiful short story using AI. This app leverages **Image
 ---
 ```
 ```
-![Landing Page Screenshot](public/assets/landing_page.png)
-
+![landing page Screenshot](landing_page.png)
 ```
 ```
 ![main page Screenshot](main_page.png)
