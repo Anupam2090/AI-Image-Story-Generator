@@ -3,6 +3,11 @@
 Turn any image into a beautiful short story using AI. This app leverages **Image Captioning (CLIP or BLIP)** and **Gemini AI** to generate unique and creative stories from images and optional prompts.
 
 ---
+![landing page Screenshot](landing_page.png)
+
+![main page Screenshot](main_page.png)
+
+![story generate demo Screenshot](generate_story.png)
 
 ## 🚀 Features
 
