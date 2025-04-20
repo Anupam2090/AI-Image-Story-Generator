@@ -43,7 +43,6 @@ credential.ini
 !/public/assets/.gitkeep
 
 # Ignore image files
-*.png
 *.gif
 
 
