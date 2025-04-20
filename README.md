@@ -3,16 +3,6 @@
 Turn any image into a beautiful short story using AI. This app leverages **Image Captioning (CLIP or BLIP)** and **Gemini AI** to generate unique and creative stories from images and optional prompts.
 
 ---
-```
-```
-![landing page Screenshot](screenshots/landing_page.png)
-```
-```
-![main page Screenshot](screenshots/main_page.png)
-```
-```
-![story generate demo Screenshot](screenshots/generate_story.png)
-```
 
 ## 🚀 Features
 
@@ -134,8 +124,31 @@ Uploads an image + optional prompt and returns caption + story.
 }
 
 ```
-## 🧠 Tech Stack
+```
+```
+## 🖼️ App Screenshots
 
+```
+```
+Here’s a quick look at how the app works:
+
+### 🚀 Landing Page
+Shows the welcome screen with an animated entry button.
+![landing page Screenshot](screenshots/landing_page.png)
+
+### 🧠 Main Interface
+Where users upload an image and optionally write a prompt.
+![main page Screenshot](screenshots/main_page.png)
+
+### ✨ Story Generation Demo
+Displays the generated story below the uploaded image.
+![story generate demo Screenshot](screenshots/generate_story.png)
+
+```
+```
+## 🧠 Tech Stack
+```
+```
 This project is built using modern web technologies and state-of-the-art AI models:
 
 ### 🖼️ Frontend
@@ -154,8 +167,10 @@ This project is built using modern web technologies and state-of-the-art AI mode
 ### 🤖 AI Story Generation
 - **Gemini API (by Google)** – Advanced AI model used to generate creative short stories based on image captions and optional prompts
 
+```
+```
 ## 🪪 License
-
+```
 This project is licensed under the **MIT License** – you're free to use it for personal and commercial purposes.
 
-
+```
