@@ -134,14 +134,17 @@ Here’s a quick look at how the app works:
 
 ### 🚀 Landing Page
 Shows the welcome screen with an animated entry button.
+
 ![landing page Screenshot](screenshots/landing_page.png)
 
 ### 🧠 Main Interface
 Where users upload an image and optionally write a prompt.
+
 ![main page Screenshot](screenshots/main_page.png)
 
 ### ✨ Story Generation Demo
 Displays the generated story below the uploaded image.
+
 ![story generate demo Screenshot](screenshots/generate_story.png)
 
 ```
